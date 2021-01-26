@@ -1,0 +1,423 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/* products.html css */
+body {
+  margin: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: lightgrey;
+}
+
+nav {
+    background: black;
+    height: 90px;
+    width: 100%;
+  }
+  nav ul {
+    list-style: none;
+    float: right;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 30px 10px;
+    list-style: none;
+    transition: all .2s ease-in-out;
+  }
+
+  nav li:hover { 
+  transform: scale(1.2); 
+}
+
+.logo {
+  height: 100%;
+  float: left;
+}
+  
+  nav a {
+    color: white;
+    font-size: 27px;
+  }
+
+  .index-hero {
+    background-image: url("./cards-pics/Hero\ car\ image.jpg");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    filter: brightness(85%)
+  }
+
+.hero-article {
+  height: 100%;
+  width: 500px;
+  margin: auto;
+}
+
+
+.hero-h1 {
+    position: relative;
+    top: 200px;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    filter: brightness(100%)
+  }
+
+  .main-index-section {
+    margin: auto;
+    height: 300px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .p-main {
+    height: 300px;
+    width: 35%;
+    float: left;
+    background-image: url("https://www.click2houston.com/resizer/k_eO41i7iPRH0sQYZ9fY04yjNXQ=/1600x1034/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/PGQLI2746BGPVIWP2R3FNQFPGU.jpg");
+    margin: 10px;
+    background-size: cover;
+  }
+
+  .p-main-tag {
+    margin: 0%;
+    font-size: 25px;
+    position: relative;
+    top: 30%;
+    margin-left: 10px;
+    color: white;
+  }
+
+  .p2-main {
+    height: 300px;
+    width: 35%;
+    float: right;
+    background-image: url("https://www.goodwood.com/globalassets/.road--racing/road/news/2020/9-september/czinger-21c-jens-sverdrup-interview/czinger-21c-performance-goodwood-10092020.jpg?crop=(0,135,2600,1598)&width=1600");
+    margin: 10px;
+    background-size: cover;
+  }
+
+  .p2-main-tag {
+    margin: 0%;
+    font-size: 25px;
+    position: relative;
+    top: 30%;
+    margin-left: 10px;
+    color: white;
+  }
+
+  #no-worries-section {
+    background-color: lightgrey;
+    margin-top: 15px;
+    padding: 16px;
+}
+
+.bottom-section-title {
+  text-align: center;
+}
+
+
+#no-worries-section .bottom-section-title {
+    color:white;
+    margin: 32px;
+}
+
+.no-worries_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.no-worries{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.no-worries-image {
+    background-color: white;
+    width: 128px;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 128px;
+    margin: auto;
+}
+
+
+.no-worries-description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.home-image-1 {
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bugatti-chiron-pur-sport-106-1582836604.jpg");
+  background-size: cover;
+}
+
+.home-image-2 {
+  background-image: url("https://motownindia.com/images/Corporate-News/LUXURY-CARS-IN-INDIA-A-Painful-Growth-Motown-India-Bureau-1-989.jpg");
+  background-size: cover;
+}
+
+.home-image-3 {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/71RyMcAwIJL._AC_SX522_.jpg");
+  background-size: cover;
+}
+
+footer {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.inner-footer {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+
+.inner-footer .logo-container {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.inner-footer .logo-container img {
+  width: 100px;
+  height: auto;
+}
+
+.inner-footer .footer-third {
+width: calc(21.6666666667 - 20px);
+margin-right: 10px;
+float: left;
+height: 100%;
+}
+
+.inner-footer .footer-third:last-child {
+  margin-right: 0;
+}
+
+.inner-footer .footer-third .footer-h2 {
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+.inner-footer .footer-third a{
+  font-size: 18px;
+  color: white;
+  display: block;
+  font-weight: 200px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.inner-footer .footer-third li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.inner-footer .footer-third span {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
+}
+
+@media(max-width: 600px) {
+  .footer .inner-footer {
+    width: 90%;
+  }
+  .inner-footer .logo-container,
+  .inner-footer .footer-third {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 600px) {
+  .p-main .p-main-tag,
+  .p2-main .p2-main-tag {
+    font-size: 19px;
+  } 
+}
+
+@media (max-width: 600px) {
+   .index-hero .hero-article .hero-h1 {
+    font-size: 30px;
+    float: left;
+  }
+}
+
+/* end of index css */
+
+/* start of product css */
+
+.products-h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main-products-article {
+  width: 100%;
+  background-color: lightgrey;
+  height: 1500px;
+}
+
+.products-h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.card-set {
+  height: 450px;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  height: 90%;
+  margin:50px;
+  background-image: url("https://www.liveabout.com/thmb/UGnDqqDeNe6TZDNf2l7WRFJZwO4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/motor-racing-track-83271563-5ba68e9746e0fb0025c770f7.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.card-1 {
+  float: left;
+}
+
+.card-2 {
+  float: right;
+}
+.image {
+  height: 50%;
+  width: 70%;
+  background-size: cover;
+  margin-left: 70px;
+  margin-top: 5px;
+}
+
+.image-1 {
+  background-image: url("./cards-pics/2019-mclaren-senna-.jpg");
+}
+
+.image-2 {
+  background-image: url("./cards-pics/Rolls-Royce-Wraith.png");
+}
+
+.image-3 {
+  background-image: url("./cards-pics/aston-mar-superlegga.jpg");
+}
+
+.image-4 {
+  background-image: url("./cards-pics/aston_vanquish.jpg");
+}
+
+.image-5 {
+  background-image: url("./cards-pics/audi-r8.jpg");
+}
+
+.image-6 {
+  background-image: url("./cards-pics/ferrari-sf90-stradale.jpg");
+}
+
+.image-7 {
+  background-image: url("./cards-pics/ford-gt_3.jpg");
+}
+
+.image-8 {
+  background-image: url("./cards-pics/ferrari_f8_tributo.jpg");
+}
+
+.image-9 {
+  background-image: url("./cards-pics/huracan-evo-\ \(1\).jpg");
+}
+
+.image-10 {
+  background-image: url("./cards-pics/mclaren-720s_1.jpg");
+}
+
+.image-11{
+  background-image: url("./cards-pics/noble-m600.jpg");
+}
+
+.image-12 {
+  background-image: url("./cards-pics/ferrari-sf90.jpeg");
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container{
+  padding: 2px 16px;
+}
+
+@media (max-width: 600px) {
+  .card-set .card .container {
+   font-size: 10px;
+   height: 500px;
+ }
+}
+/* end of products */
+
+/* start of contact page */
+.contactMainDivHome{
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  font-size: 20px;
+}
+form {
+  width: 50%;
+  margin: 25px auto;
+  line-height: 1.5;
+}
+form p {
+  padding-left: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+em.error {
+  margin-left: 5px;
+  padding: 2px 4px;
+  background-color: red;
+  color: white;
+  border-radius: 2px;
+}
+.has-error {
+  background-color: yellow;
+}
+
+.c-footer{
+  height: 80px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .cmxform {
+   font-size: 15px;
+ }
+}
