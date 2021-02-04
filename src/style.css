@@ -4,7 +4,7 @@
   list-style: none;
   text-decoration: none;
 }
-/* products.html css */
+/* home page css */
 body {
   margin: auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -42,31 +42,150 @@ nav {
     font-size: 27px;
   }
 
-  .index-hero {
-    background-image: url("./cards-pics/Hero\ car\ image.jpg");
-    background-size: cover;
-    height: 650px;
-    width: 100%;
-    background-repeat: no-repeat;
-    filter: brightness(85%)
-  }
 
-.hero-article {
-  height: 100%;
-  width: 500px;
-  margin: auto;
+  /* slider */
+  h2 {
+    color: #fff;
+    text-align: center;
+   font-size: 25px;
 }
 
-
-.hero-h1 {
-    position: relative;
-    top: 200px;
-    margin: auto;
-    text-align: center;
-    font-size: 40px;
-    color: black;
-    filter: brightness(100%)
-  }
+#slider {
+   margin: 0 auto;
+   max-width: 100%;
+   text-align: center;
+   width: 800px;
+}
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#slides {
+   padding: 10px;
+   border: 3px solid #ccc;
+   background: #fff;
+   position: relative;
+   z-index: 1;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+#slides .inner {
+   transition: margin-left 800ms (0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 300px;
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: #fff;
+}
+#slides .slide_1 {
+   background: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6e/d8/50.jpg);
+   background-size: 100%;
+}
+#slides .slide_2 {
+   background: url(https://img.grouponcdn.com/deal/3k83nEAggRTnuvimRFAGscFWngJB/3k-2822x2117/v1/c700x420.jpg);
+   background-size: 100%;
+}
+#slides .slide_3 {
+   background: url(https://www.https://racingexperience.com/wp-content/uploads/2018/01/exotic.jpg.com/gfx/d/small-towns-in-spain/albarracin.jpg?v=1);
+   background-size: 100%;
+}
+#slides .slide_4 {
+   background: url(https://www.motorbiscuit.com/wp-content/uploads/2019/06/2020_GR_Supra_Renaissance_Red_016_F6BFBBF18C87420B6974EAF8B6E0A9025F33242B-1024x692.jpg);
+   background-size: 100%;
+}
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.3s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #444;
+}
+@media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1),
+   #slide1:checked ~ #controls label:nth-last-child(2),
+   #slide2:checked ~ #controls label:nth-last-child(3),
+   #slide3:checked ~ #controls label:nth-last-child(4),
+   #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}
 
   .main-index-section {
     margin: auto;
